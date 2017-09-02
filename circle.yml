@@ -4,3 +4,12 @@ machine:
     version: 6.9.2
   test:
     - npm test
+dependencies:
+  pre:
+      - pip install awsebcli
+deployment:
+  develop:
+    branch: /^(?!master$).*$/
+    commands:
+      - eb use env-dev --profile default
+      - eb deploy --profile default
