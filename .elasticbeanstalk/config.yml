@@ -2,6 +2,8 @@ branch-defaults:
   master:
     environment: env-dev
     group_suffix: null
+  production:
+    environment: env-prod
 global:
   application_name: hello-cicd
   branch: null

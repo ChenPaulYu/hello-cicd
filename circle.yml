@@ -13,3 +13,8 @@ deployment:
     commands:
       - eb use env-dev --profile default
       - eb deploy --profile default
+  production:
+    branch: master
+    commands:
+      - eb use env-prod --profile default
+      - eb deploy --profile default
